@@ -1,0 +1,174 @@
+/* SlidingAuth.css */
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f5f7;
+    margin: 0;
+  }
+  
+  .wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+  }
+  
+  .right-panel-active {
+    transform: translateX(100%);
+  }
+  
+  .form-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .sign-up-form {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0);
+  }
+  
+  .sign-in-form {
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  
+  .sign-up-form.active {
+    z-index: 2;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(100%);
+  }
+  
+  .sign-in-form.active {
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+  
+  .form-content {
+    text-align: center;
+  }
+  
+  .form-content h1 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .input-field {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .button {
+    border-radius: 20px;
+    border: 1px solid #ff4b2b;
+    background-color: #ff4b2b;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin-top: 20px;
+    border: none;
+  }
+  
+  .side-panel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .side-panel .panel-content {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .side-panel .panel-left {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(-20%);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .side-panel .panel-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    transform: translateX(20%);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .button-transparent {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+  

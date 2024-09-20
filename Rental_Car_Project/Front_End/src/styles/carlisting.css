@@ -1,0 +1,9 @@
+.car-listing {
+    padding: 16px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

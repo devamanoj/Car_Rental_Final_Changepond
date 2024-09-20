@@ -1,0 +1,226 @@
+/* .car__item {
+  border: 1px solid #7c8a9736;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.car__item-info span i {
+  color: #f9a826;
+  font-size: 1.1rem;
+}
+
+.car__item-btn {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: #000d6b;
+  padding: 8px 0px;
+}
+
+.car__item-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.car__item-btn a:hover {
+  color: #fff;
+}
+.car__btn-details {
+  background: #f9a826;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.car__btn-rent {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.car__item-content h4 {
+  font-size: 1.8rem;
+}
+
+.car__item-content h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .car__item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .car__item h6 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .car__item-info {
+    flex-wrap: wrap;
+  }
+
+  .car__item-info span {
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .car__item-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item h4 {
+    font-size: 1rem;
+  }
+
+  .car__item h6 {
+    font-size: 0.9rem;
+  }
+
+  .car__item-info span {
+    font-size: 0.7rem;
+  }
+
+  .car__item-info span i {
+    font-size: 0.9rem;
+  }
+
+  .car__item-btn {
+    font-size: 0.8rem;
+  }
+}  */
+
+.car__item {
+  border: 1px solid #7c8a9736;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: #000d6b; /* Default background color */
+  color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+.car__item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #003d7a; /* Lighter shade of background color on hover */
+}
+
+.car__img {
+  overflow: hidden;
+}
+
+.img-hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+.car__item-info span i {
+  color: #f9a826;
+  font-size: 1.1rem;
+}
+
+.car__item-btn {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background: #ffffff; /* Default button background color */
+  color: #000d6b; /* Text color for better contrast on buttons */
+  padding: 8px 0px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.car__item-btn a {
+  text-decoration: none;
+  color: inherit; /* Inherit button text color */
+  font-weight: 500;
+}
+
+.car__item-btn:hover {
+  background: #003d7a; /* Darker shade of button background on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.car__btn-details {
+  background: #f9a826;
+  color: #000d6b; /* Text color for better contrast */
+  border-radius: 0px 4px 4px 0px;
+}
+
+.car__btn-details:hover {
+  background: #e89a19;
+  color: #ffffff; /* Change text color on hover */
+}
+
+.car__btn-rent {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.car__btn-rent:hover {
+  background: #000a4f; /* Darker shade of button background on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+.car__item-content h4 {
+  font-size: 1.8rem;
+  color: #ffffff; /* Make the car title text color white */
+}
+
+.car__item-content h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .car__item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .car__item h6 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .car__item-info {
+    flex-wrap: wrap;
+  }
+
+  .car__item-info span {
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+
+  .car__item-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item h4 {
+    font-size: 1rem;
+  }
+
+  .car__item h6 {
+    font-size: 0.9rem;
+  }
+
+  .car__item-info span {
+    font-size: 0.7rem;
+  }
+
+  .car__item-info span i {
+    font-size: 0.9rem;
+  }
+
+  .car__item-btn {
+    font-size: 0.8rem;
+  }
+}
+
+

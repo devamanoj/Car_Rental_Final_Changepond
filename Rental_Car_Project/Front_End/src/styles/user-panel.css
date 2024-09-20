@@ -1,0 +1,48 @@
+UserPanel.css
+.sidebar {
+    transition: width 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar.open {
+    width: 250px;
+  }
+  
+  .sidebar.closed {
+    width: 70px;
+  }
+  
+  .custom-button {
+    background-color: #000d6b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #001a7b;
+    transform: scale(1.05);
+  }
+  
+  .custom-button:focus {
+    box-shadow: none;
+  }
+  
+  .nav-link {
+    text-align: center;
+  }
+  
+  .nav-link .custom-button {
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,..."); /* Custom toggle icon if needed */
+  }
+  

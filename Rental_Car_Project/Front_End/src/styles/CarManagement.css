@@ -1,0 +1,38 @@
+.custom-card {
+    border: 2px solid #000d6b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.custom-card-img {
+    height: 180px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.custom-card-body {
+    background-color: #f9f9f9;
+}
+
+.custom-edit-button,
+.custom-delete-button {
+    background-color: #000d6b;
+    border-color: #000d6b;
+    color: white;
+}
+
+.custom-edit-button:hover,
+.custom-delete-button:hover {
+    background-color: #003a7b;
+    border-color: #003a7b;
+}
+
+.custom-submit-button {
+    background-color: #000d6b;
+    border-color: #000d6b;
+}
+
+.custom-submit-button:hover {
+    background-color: #003a7b;
+    border-color: #003a7b;
+}
